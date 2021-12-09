@@ -2,7 +2,8 @@
 FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    PIP_CACHE_DIR=/.cache
+    PIP_CACHE_DIR=/.cache \
+    DOCKER_BUILDKIT=1
 
 WORKDIR /label-studio
 
